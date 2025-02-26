@@ -1,3 +1,3 @@
-# Source code
+# 源代码
 
-All source code for this lab is located in the [Contoso Creative Writer Repository](https://github.com/Azure-Samples/contoso-creative-writer) and instructions for the lab can be found in the `.docs/workshop` folder. 
+此实验的所有源代码都位于 [Contoso Creative Writer 仓库](https://github.com/Azure-Samples/contoso-creative-writer)，实验的相关说明可以在 `.docs/workshop` 文件夹中找到。

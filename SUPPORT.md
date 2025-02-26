@@ -1,63 +1,58 @@
-# Support
+# 支持
 
-## How to file issues and get help  
+## 如何提交问题并获取帮助
 
-If you find a bug in the source code or a mistake in the documentation, you can help us by
-[submitting an issue](#submit-issue) to the GitHub Repository. Even better, you can
-[submit a Pull Request](#submit-pr) with a fix.
+如果您在源代码中发现了错误或在文档中发现了疏漏，您可以通过[提交问题](#submit-issue)到 GitHub 仓库来帮助我们。更棒的是，您还可以[提交拉取请求](#submit-pr)来修复这些问题。
 
-## <a name="feature"></a> Want a Feature?
-You can *request* a new feature by [submitting an issue](#submit-issue) to the GitHub
-Repository. If you would like to *implement* a new feature, please submit an issue with
-a proposal for your work first, to be sure that we can use it.
+## <a name="feature"></a> 想要一个新功能？
 
-* **Small Features** can be crafted and directly [submitted as a Pull Request](#submit-pr).
+您可以通过[提交问题](#submit-issue)到 GitHub 仓库来*请求*一个新功能。如果您希望*实现*一个新功能，请先提交一个包含您计划的提案的问题，以确保我们能够使用它。
 
-## <a name="submit"></a> Submission Guidelines
+* **小功能** 可以制作完成后直接[提交为拉取请求](#submit-pr)。
 
-### <a name="submit-issue"></a> Submitting an Issue
-Before you submit an issue, search the archive, maybe your question was already answered.
+## <a name="submit"></a> 提交指南
 
-If your issue appears to be a bug, and hasn't been reported, open a new issue.
-Help us to maximize the effort we can spend fixing issues and adding new
-features, by not reporting duplicate issues.  Providing the following information will increase the
-chances of your issue being dealt with quickly:
+### <a name="submit-issue"></a> 提交问题
+在您提交问题之前，请先搜索存档，也许您的问题已经被回答过了。
 
-* **Overview of the Issue** - if an error is being thrown a non-minified stack trace helps
-* **Version** - what version is affected (e.g. 0.1.2)
-* **Motivation for or Use Case** - explain what are you trying to do and why the current behavior is a bug for you
-* **Browsers and Operating System** - is this a problem with all browsers?
-* **Reproduce the Error** - provide a live example or a unambiguous set of steps
-* **Related Issues** - has a similar issue been reported before?
-* **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
-  causing the problem (line of code or commit)
+如果您的问题似乎是一个错误，并且尚未被报告，请新建一个问题。  
+请不要重复报告问题，以便我们将更多精力用于修复问题和添加新功能。  
+提供以下信息将有助于您的问题更快地得到解决：  
 
-You can file new issues by providing the above information at the corresponding repository's issues link: [https://github.com/Azure-Samples/contoso-creative-writer/issues/new](https://github.com/Azure-Samples/contoso-creative-writer/issues/new).
+* **问题概述** - 如果抛出错误，未压缩的堆栈跟踪有助于排查问题  
+* **版本** - 受影响的版本是什么（例如 0.1.2）  
+* **动机或使用场景** - 解释您试图完成的任务，以及为什么当前行为对您来说是一个问题  
+* **浏览器和操作系统** - 这个问题是否在所有浏览器上都存在？  
+* **复现错误** - 提供一个实时示例或明确的步骤集  
+* **相关问题** - 是否之前有类似的问题被报告过？  
+* **建议的修复方法** - 如果您无法自己修复该错误，或许可以指明可能引起问题的来源（代码行或提交记录）  
 
-### <a name="submit-pr"></a> Submitting a Pull Request (PR)
-Before you submit your Pull Request (PR) consider the following guidelines:
+您可以通过在相应存储库的问题链接提供上述信息来提交新问题：[https://github.com/Azure-Samples/contoso-creative-writer/issues/new](https://github.com/Azure-Samples/contoso-creative-writer/issues/new)。
 
-* Search the repository [https://github.com/Azure-Samples/contoso-creative-writer/pulls](https://github.com/Azure-Samples/contoso-creative-writer/pulls]) for an open or closed PR
-  that relates to your submission. You don't want to duplicate effort.
+### <a name="submit-pr"></a> 提交拉取请求（PR）
+在提交拉取请求（PR）之前，请考虑以下指南：
 
-* Make your changes in a new git fork:
+* 在存储库中搜索 [https://github.com/Azure-Samples/contoso-creative-writer/pulls](https://github.com/Azure-Samples/contoso-creative-writer/pulls])，查看是否有与您的提交相关的已打开或已关闭的拉取请求（PR）。  
+  您不希望重复工作。  
 
-* Commit your changes using a descriptive commit message
-* Push your fork to GitHub:
-* In GitHub, create a pull request
-* If we suggest changes then:
-  * Make the required updates.
-  * Rebase your fork and force push to your GitHub repository (this will update your Pull Request):
+* 在一个新的 git 分支中进行更改：
+
+* 使用描述性提交信息提交您的更改  
+* 将您的分支推送到 GitHub：  
+* 在 GitHub 上创建一个拉取请求  
+* 如果我们建议进行更改，则：  
+  * 进行所需的更新。  
+  * 对您的分支进行变基并强制推送到您的 GitHub 仓库（这将更新您的拉取请求）：  
 
     ```shell
     git rebase master -i
     git push -f
     ```
 
-That's it! Thank you for your contribution!
+就是这样！感谢您的贡献！
 
-For help and questions about using this project, please create an issue as detailed above and tag [@marlenezw](https://github.com/marlenezw) if you have not recieved a response after 3 days.  
+If you need help or have any questions regarding the use of this project, please create an issue as detailed above and mention [@marlenezw](https://github.com/marlenezw) if there is no response for more than 3 days.
 
-## Microsoft Support Policy  
+## 微软支持政策  
 
-Support for this **PROJECT or PRODUCT** is limited to the resources listed above.
+对该**项目或产品**的支持仅限于上述列出的资源。

@@ -1,134 +1,126 @@
-## How To Use 
+## 如何使用
 
-Welcome,
+欢迎，
 
-We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the presentation design team. 
+我们很高兴您能来到这里，也期待您呈现这份精彩的内容。作为一位经验丰富的演讲者，我们知道您知道如何进行演讲，所以本指南将重点放在您需要展示的内容上。它将为您提供由演示设计团队创建的完整演示流程。
 
-Along with the video of the presentation, this document will link to all the assets you need to successfully present including PowerPoint slides, demo instructions & code.
+与演示视频一起，本文档将链接到您成功完成演示所需的所有资源，包括PowerPoint幻灯片、演示说明和代码。
 
-1.  Read document in its entirety.
-2.  Watch the video presentation
-3.  Ask questions of the Lead Presenter
+1. 通读整个文件。  
+2. 观看视频演示。  
+3. 向主讲人提问。  
 
-## File Summary
+## 文件摘要
 
-| Resources          | Links                            | Description |
+| 资源                | 链接                                      | 描述            |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | [Presentation - slides](https://aka.ms/AArxx4v) | Slides |
-| PPT Recording     | [Presentation - video](https://aka.ms/AAs4l8x) | Video Recording of the PowerPoint slides with audio |
-| Videos            | [Full Workshop Presentation - video](https://aka.ms/AAs50ni) | Example Presetation of this Session |
-| Demos             | [Contoso Creative Writer - code](https://github.com/Azure-Samples/contoso-creative-writer) | The Source Code | 
-| Demo Recordings           | [Contoso Creative Writer - app demo - video](https://aka.ms/AAs4t0n) | Recording of the Demo Live 1 | 
-| Demo Recordings           | [Contoso Creative Writer - Skillable lab manual walk through - video](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N) | Recording of the Demo Live 2 | 
+| PowerPoint        | [演示文稿 - 幻灯片](https://aka.ms/AArxx4v) | 幻灯片          |
+| PPT 录制          | [演示文稿 - 视频](https://aka.ms/AAs4l8x) | 带有音频的 PowerPoint 幻灯片视频录制 |
+| 视频              | [完整工作坊演示 - 视频](https://aka.ms/AAs50ni) | 此环节的示例演示 |
+| 示例演示          | [Contoso Creative Writer - 代码](https://github.com/Azure-Samples/contoso-creative-writer) | 源代码          | 
+| 示例演示录制      | [Contoso Creative Writer - 应用演示 - 视频](https://aka.ms/AAs4t0n) | 示例演示直播录制 1 |
+| 示例演示录制      | [Contoso Creative Writer - Skillable 实验手册演练 - 视频](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N) | 示例演示直播录制 2 | 
 
-## Get Started
+## 开始使用
 
-This lab is intended to be delivered by a Presenter who will show the slides and demos and answer questions for the class, supported
-by one or more Proctors who will provide individual assistant to participants during the lab.
+此实验室旨在由一位讲解员进行授课，讲解员将展示幻灯片和演示，并回答课堂上的问题，同时由一名或多名助教支持，助教将在实验过程中为参与者提供个别协助。
 
-This training repository is divided in to the following sections:
+该培训资源库分为以下几个部分：
 
-| [Slides](#slides) | [Demos](#demos) | [Deployment](#deployment-Preparation) | 
+| [幻灯片](#slides) | [演示](#demos) | [部署](#deployment-Preparation) | 
 |-------------------|---------------------------|--------------------------------------
-| 12 slides - 8 minutes| 2 demos - 10 minutes | Self paced walk through - 50 minutes
+| 12张幻灯片 - 8分钟 | 2个演示 - 10分钟 | 自主学习流程 - 50分钟 |
 
-### Timing
+### 时间安排
 
-| Time        | Description 
+| 时间         | 描述 
 --------------|-------------
-0:00 - 2:00   | Meet the instructors 
-2:00 - 8:00  | What are we building?
-8:00 - 18:00 | DEMO and Lab Manual walk through (participant initial set up)
-18:00 - 22:00 | How does the assitant work?
-22:00 - 24:00 | Workshop Goals 
-24:00 - 75:00 | Self paced walk through(50 mins)
+0:00 - 2:00   | 认识指导老师 
+2:00 - 8:00   | 我们将会构建什么？ 
+8:00 - 18:00  | 演示和实验手册讲解（参与者的初始设置） 
+18:00 - 22:00 | 助手是如何工作的？ 
+22:00 - 24:00 | 研讨会目标 
+24:00 - 75:00 | 自主操作讲解（50分钟） 
 
-## Slides
+## 幻灯片
 
-The [Presentation slides](https://aka.ms/AArxx4v) has incomplete presenter notes. Please use the [Presenter Script](SCRIPT.md) as a guide on what to say for each slide instead. 
+[演示文稿幻灯片](https://aka.ms/AArxx4v) 的主持人备注不完整。请使用 [主持人脚本](SCRIPT.md) 作为指南，对每张幻灯片进行讲解。
 
-You can also watch a video walk through of the PPT slides with the script being read [here](https://aka.ms/AAs4l8x). 
+您还可以观看包含脚本朗读的 PPT幻灯片视频演示 [这里](https://aka.ms/AAs4l8x)。
 
-### Presenting the slides: 
+### 演示幻灯片：
 
-- As attendees enter the room have `slide 2` up on the screen. (Preferably add Wi-Fi information to this slide.)
+- 当参与者进入房间时，在屏幕上显示`幻灯片 2`。（最好在此幻灯片上添加 Wi-Fi 信息。）
+
+- 一旦所有人入座，跳转到`第5页幻灯片`，即“认识讲师和监考员”幻灯片。为了节省时间，这就是您必须开始的幻灯片。请**编辑此幻灯片**，并填写相关信息，包括：
+
+    * 主讲教员姓名和照片  
+    * 监考人员姓名和照片  
+    * Wi-Fi 信息  
+    * 启动参与者实验环境的链接（由 Skillable 团队提供）  
+
+- 让与会者连接到 Wi-Fi，并指导他们打开 Skillable 链接并点击 `Launch` 按钮。实验室的启动可能需要一些时间，因此在大多数参与者点击启动按钮后再开始演示。
+
+- 第10页是写有“演示”的幻灯片。当你到达这一页时，请共享你的屏幕并：
+
+    1. 播放 [Contoso Creative Writer 应用演示视频](https://aka.ms/AAs4t0n)。你也可以将应用程序部署在自己的屏幕上进行演示。  
+    2. 切换到 Skillable Lab Manual 页面，并与参与者一起完成手册中的每一步操作。他们应该在自己的电脑上同时进行这些步骤。你可以观看此过程的视频演示：[Contoso Creative Writer - Skillable 实验手册操作演示 - 视频](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N)。
+
+- 一旦多数参与者完成了实验室指令，请回到幻灯片并从第 `11` 张幻灯片开始，“助理是如何工作的”。当你讲解到第 `16` 张幻灯片并讨论了研讨会的目标后，**请停止展示幻灯片**，让与会者自行操作。（**第 17 张幻灯片已过时，请不要展示这张幻灯片**。）
+
+总体而言，本部分研讨会，包括展示应用程序演示和完成实验室操作说明，不应超过**最多20分钟**。[演示者脚本](SCRIPT.md)中包含了每个部分的时间估计！（请勿使用PowerPoint中议程部分的时间估计。）
+
+### 启动实验环境
+
+当本实验在 AI 巡回活动中进行时，[Skillable](https://docs.skillable.com/) 平台会为每位参与者提供一个临时的 Azure 账户使用。登录后，环境会提供一套实验说明，这是实验内容的启动点。
+
+根据您在研讨会中的角色，您将使用专用链接启动 Skillable 实验环境。
+
+* **[实验作者](https://labondemand.com/LabProfile/171046)**：此链接供实验内容的作者和维护者使用。  
+  您必须使用您的 Microsoft 企业凭据登录才能访问此链接。  
+  **注意**：实验环境将在2-3分钟内出现，但您必须再等待最多30分钟，以便 Azure 资源部署到临时的 Azure 帐户，然后再运行研讨会。  
+  使用实验指令中提供的凭据登录 [Azure 门户](https://portal.azure.com) 以监控进度。在创建的单一资源组中，当34次部署完成后，您将看到14个 Azure 资源。
   
-- Once everyone is seated jump to `slide 5`, which is the 'Meet the Instructor and Proctors" slide. For the sake of time this is the slide you must begin with. Please **edit this slide** with relevant information including:
-  
-    * Lead instructor name and picture
-    * Proctor names and pictures 
-    * Wi-Fi information
-    * Link to to launch Participant Lab Environment (provided by Skillable team)
-      
-- Let the attendees connect to the Wi-Fi and instruct them to navigate to the skillable link and press the `Launch` button. Launching the lab may take some time so start the presentation once the majority of participants have cliked the launch button. 
-  
-- Slide 10 is the slide that says "DEMO". Once you get to this slide share your screen and:
-  
-    1. Play the [Contoso Creative Writer App demo video](https://aka.ms/AAs4t0n). You could also deploy the application on your own screen and show that instead. 
-    2. Switch to the Skillable Lab Manual page and complete each step of the instructions with the attendees. They should be carrying out the steps on their own machines at the same time. You can watch a video walk through of this process here:  [Contoso Creative Writer - Skillable lab manual walk through - video](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N). 
-       
-- Once the lab instructions are completed by the majority of participants come back to the slides and begin on `slide 11`, "How does the assistant work." You should **stop presenting the slides** and let attendees work on their own once you reach `slide 16` and have discussed the workshop goals. (**Slide 17 is outdated so please do not show this slide**.) 
+* **演示者和监考人员**：从 Tech Check 门户启动 Lab WRK551。（此链接将在实验活动开始前1-2周由内容所有者提供。）使用此链接可在与实验参与者相同的环境中测试实验。
 
-Overall this section of the workshop, including showing the app demo and completing the lab instructions, should not take a **maximum of 20mins**. The [presenter script](SCRIPT.md) includes time estimates for each section! (Do not use the time estimate from the agenda section in the powerpoint.)
+* **参与者**：使用您的实验演示者提供的参与者链接。注意：参与者的实验环境将在计划实验时间前15分钟激活，并在实验结束后30分钟停止运行。
 
-### Launching the lab environment
+## 部署 / 准备
 
-When this lab is delivered during AI Tour, the [Skillable](https://docs.skillable.com/) platform provides a temporary Azure
-account for each participant to use. After logging in, the environment provides a set of Lab Instructions, the launching point for
-the lab content.
+本次实验包含两个部分，参与者需要完成以成功部署：
 
-Depending on your role in the workshop, you will launch the Skillable lab environment using a dedicated link.
+1. 前置要求，获取 Azure 凭据，并按照 Skillable Lab 手册中的说明启动 Github Codespaces
 
-* **[Lab authors](https://labondemand.com/LabProfile/171046)**: This link is used by authors and maintainers of the lab content.
-  You must log in using your Microsoft corporate credentils to access this link.
-  **Note**: the lab environment will appear in 2-3 minutes,
-  but you must wait up to 30 minutes more for Azure resources to deploy to the temporary Azure account
-  before running the workshop.
-  Log into the [Azure portal](https://portal.azure.com) using the credentials in the Lab Instructions to monitor progress. In the
-  single resource group created, you 14 Azure resource when the 34 deployments are complete. 
-* **Presenters and Proctors**: Launch Lab WRK551 from the Tech Check portal. (This link will be provided by your content owner 1-2
-  weeks before lab events.) Use this link to test the lab using an environment identical to that provded to lab participants.
-* **Partcipants**. Use the participant link provided by your lab presenter. Note: participant lab environments will only be
-  active 15 minutes before through 30 minutes after the scheduled lab time.
+* 本部分内容应在研讨会的“`DEMO 和实验手册演示`”环节完成，展示最终部署应用的快速演示效果后进行。您可以在此存储库中阅读本研讨会的[Skillable 实验手册](LAB_MANUAL.md)，但在实际当天，应在 Skillable 环境中打开它。
 
-## Deployment / Preparation
+* 教员应共享他们的屏幕，并在 Skillable 环境中逐步演示 Skillable 实验手册的说明，同时指导参与者在自己的电脑上跟随操作。
 
-There are two parts of this lab the participants will need to complete for succesful deployment: 
+    * 一旦大多数参与者启动了他们的 Github Codespace 环境，在 Codespaces 加载的同时，您应当讨论幻灯片中的《助手如何工作？》和《研讨会目标》部分。
 
-1. Pre-requisites, getting Azure Credentials, and launching Github Codepsaces using the instructions in the Skillable Lab Manual
+    * 我们在研讨会中不会使用 Skillable VM，但参与者需要从 Skillable 的 `资源` 标签中获取他们的 Azure 凭据。
 
-    * This part of the workshop should be completed during the `DEMO and Lab Manual walk through` section of the workshop, after you show a quick demo of what the final deployed app should look like. You can read the [Skillable Lab Manual](LAB_MANUAL.md) for this workshop in this repository but on the day you should open it in the Skillable environment. 
+    * Skillable 已经预先配置好了工作坊资源，但实验手册会指导参与者下载一个包含环境变量的 env 文件。（请阅读 Skillable 实验手册以了解前置条件和详细信息。）
 
-    * The instructor should share their screen and walk through the Skillable Lab Manual Instructions in the Skillable environment and instruct the participants to follow along doing the same on their own machines. 
+2.   按照 [contoso-chat-writer](https://github.com/Azure-Samples/contoso-creative-writer) 仓库中的自学指导进行操作。
 
-    * Once the majority of participants have launched their Github Codespace environment you should discuss the `How does the assitant work?` and `Workshop Goals` sections from the slides while the Codespaces loads. 
+        * 本次研讨会的说明将位于代码库的 `./docs/workshop` 文件夹中。
 
-    * We will not be using the Skillable VM for the workshop but participants will need to get their Azure credentials from the Skillable `Resources` tab. 
+        * 参与者应在无需指导的情况下完成本部分内容，但如果有参与者遇到困难，请提供帮助。  
 
-    * Skillable will have already provisioned the workshop resources, however participants will be instructed in the lab manual to download an env file with their environment variables in it. (Read the Skillable Lab Manual for Pre-requisites and details.)
+## 演示
 
-2.   Following the self paced instructions in the [contoso-chat-writer](https://github.com/Azure-Samples/contoso-creative-writer) repository.
+与此演示相关的每个演示的详细说明可以在本节中找到。包括：  
+* 一个展示完整应用程序的预录制视频  
+* 一个按照实验手册说明演示应用程序的预录制视频（您应当与参与者一起亲自演示实验手册说明，但该视频可作为您的指导，同时也用于应对技术问题）。  
 
-        * Instructions for this part of the workshop will be in the `./docs/workshop` folder of the repository.
-          
-        * Participants should complete this section without need for guidance from the instructors, however please help if a participant is stuck.  
+您将在工作坊的`演示和实验手册讲解`部分中主动展示这两个演示。  
 
+我们还为您的便利提供了整个研讨会的完整演练。  
+在研讨会开始之前，请务必登录到 Skillable 并确保您能够按照手册中的说明操作。如果无法操作，请联系内容创建者寻求帮助。  
 
-## Demos
-
-Detailed explanations of each demonstration associated with this presentation can be found in this section. There is:
-    * one pre-recorded video of the completed app 
-    * one pre-recorded app walking through the lab manual instructions (you should walk through the lab instructions yourself with participants but the video is to guide you and in case of technical difficulties). 
-You will actively present these two demos in the workshop during the `DEMO and Lab Manual walk through` section. 
-
-We have also included a complete walkthrough of the entire workshop for your convinience. 
-Before the workshop it is important for you to login to skillable and ensure that you are able to follow the instructions in the manual. If not please reach out to the content creators for help.
-
-| Demo 	                                                                                               | Minutes | Video |
--------------------------------------------------------------------------------------------------------|---------|----------------- | 
-|  [1 - PPT Presentation Recording](https://aka.ms/AAs4l8x) | 9mins       | [Link](https://aka.ms/AAs4l8x) |
-|  [2 - Contoso Creative Writer - Application DEMO](https://github.com/Azure-Samples/contoso-creative-writer) | 2       | [Link](https://github.com/Azure-Samples/contoso-creative-writer) |
-|  [3 - Contoso Creative Writer - Skillable Lab Manual Walk Through](LAB_MANUAL.md) | 8       | [Link](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N) |
-|  [3 - Contoso Creative Writer - Full Workshop Presentation](https://aka.ms/AAs50ni) | 20       | [Link](https://aka.ms/AAs50ni) |
-
- 
+| 演示 	                                                                                               | 时长       | 视频链接 |
+-------------------------------------------------------------------------------------------------------|-----------|----------------- | 
+|  [1 - PPT 演示文稿录制](https://aka.ms/AAs4l8x) | 9分钟      | [链接](https://aka.ms/AAs4l8x) |
+|  [2 - Contoso 创意写作 - 应用程序演示](https://github.com/Azure-Samples/contoso-creative-writer) | 2分钟    | [链接](https://github.com/Azure-Samples/contoso-creative-writer) |
+|  [3 - Contoso 创意写作 - Skillable 实验手册讲解](LAB_MANUAL.md) | 8分钟    | [链接](https://microsoft.sharepoint.com/:v:/t/AI-Tour-FY25/EWW5434JuPpMlP9O5XPsFV8Bqdz6a2LOk08xyJYqFEbBnA?e=of8G3N) |
+|  [3 - Contoso 创意写作 - 完整研讨会演示](https://aka.ms/AAs50ni) | 20分钟   | [链接](https://aka.ms/AAs50ni) |

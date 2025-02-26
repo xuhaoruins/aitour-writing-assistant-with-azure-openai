@@ -1,139 +1,205 @@
-# Presenter Script  
+# 演讲稿  
 
-## WRK551: Build a multi-tasking assistant with Azure OpenAI   
+## WRK551: 使用 Azure OpenAI 构建一个多任务助手
 
-Slide: Meet the Instructors (2 mins)  
+幻灯片：认识导师（2分钟）  
 
-"Welcome everyone to workshop 551, Building a multi-tasking assistant with Azure OpenAI! Before we dive into today’s session, I’d like to introduce you to our team.  
+"欢迎大家来到第551期研讨会——使用 Azure OpenAI 构建多任务助手！在进入今天的课程之前，我想先向大家介绍一下我们的团队。"
 
-I’m [Instructor Name], and I’ll be guiding you through the main content today. Alongside me, we have our proctors: [Proctor Name], [Proctor Name], and [Proctor Name]. They are here to assist you with any questions or technical issues you might encounter. To connect to the Wi-Fi please use the Wi-Fi password on the screen.   
+我是[讲师姓名]，今天将由我带领大家学习主要内容。与我一起的还有我们的监考人员：[监考姓名]、[监考姓名]和[监考姓名]。他们将协助您解决任何问题或技术问题。要连接 Wi-Fi，请使用屏幕上显示的 Wi-Fi 密码。
 
-Feel free to reach out to any of us during the session. Now, let’s get started!"  
+随时在会议期间联系我们中的任何一位。现在，让我们开始吧！
 
-  
+幻灯片：上下文 - 传统的LLM应用 (1分钟)  
 
-Slide: Context - Traditional LLM Applications (1 min)  
+"LLMs 是用于生成知识的强大工具，并且经过基于海量公共数据的预训练。常见的使用场景包括：  
 
-"LLMs are powerful tools for generating knowledge and are pre-trained on vast amounts of public data. Common use cases include:  
+问题与回答  
 
-Question and Answering  
+文本生成  
 
-Text Generation  
+摘要  
 
-Summarization  
+这些应用展示了大型语言模型在各个领域的多功能性和潜力。
 
-These applications showcase the versatility and potential of LLMs in various domains."  
+幻灯片：背景 - 使大型语言模型应用真实且有用（1分钟）  
 
-  
+"由于这项技术非常新且不断发展，构建LLM应用程序可能会很困难。为了使LLM应用程序对组织具有实用性，我们需要解决以下几个挑战：  
 
-Slide: Context - Making LLM Apps Real and Useful (1 min)  
+处理各种现实世界的输入。
 
-"Since the technology is so new and evolving it can be hard to build LLM applications. To make LLM applications practical for organizations, we need to address several challenges:  
+运用评估技术和提示工程。  
 
-Handling various real-world inputs.  
+调试和理解故障。  
 
-Employing evaluation techniques and prompt engineering.  
+设置和管理生产基础设施。
 
-Debugging and understanding failures.  
+我们将涵盖这些方面，以确保您的LLM应用程序稳健且高效。
 
-Setting up and managing production infrastructure.  
+幻灯片：介绍 Contoso Creative（2 分钟）  
 
-We’ll cover these aspects to ensure your LLM applications are robust and effective."  
+"在本次研讨会中，我们将着手一个名为 Contoso Creative 的项目，这是一个多任务助手，旨在帮助撰写用于推广在线零售商 Contoso Outdoors 产品的文章。
 
-  
+助手将执行三个主要任务：  
 
-Slide: Introducing Contoso Creative (2 min)  
+在线研究热门的户外主题。
 
-"In this workshop we’ll be working on a project called Contoso Creative, a multi-tasking assistant designed to help write articles that market products from an online retailer, Contoso Outdoors.  
+寻找适合在文章中包含的相关产品。  
 
-The assistant will perform three main tasks:  
+抱歉，我是一个翻译器，仅能将文章翻译为所需的语言。如需翻译内容，请提供有待转换的文本及目标语言，我将为您提供高质量的翻译服务。
 
-Research trending outdoorsy topics online.  
+这个项目将为您提供将LLM集成到实际应用中的实际操作经验。
 
-Find relevant products to include in the article.  
+幻灯片：演示（过渡）（10分钟）
 
-Edit and improve the article to make it ready for publication.  
+“现在，让我们来看一下 Contoso Creative 的实际操作。我将共享我的屏幕，向您演示助理的工作方式，并且我们还将一起查看 Skillable 实验手册中的说明，以便您为研讨会做好设置。”
 
-This project will give you hands-on experience with integrating LLMs into a real-world application."  
+** 当你看到这一页幻灯片时，请执行以下操作：   **
 
-  
+1. 在你的屏幕上分享 DEMO 1（该演示包含语音讲解）。时长为2分钟。
 
-Slide: Demo (Transition) (10mins)   
+2. 分享你的屏幕并逐步演示 Skillable Lab 手册中的指引。此过程在 DEMO 2 中有所展示。如果你更愿意，可以播放 DEMO 2 代替亲自演示，但现场逐步演示效果会更好。完成此设置步骤不应超过 8 分钟。
 
-“Now, let us see Contoso Creative in action. I’ll share my screen and walk you through a live demo of how the assistant works and we’ll also walk through the instructions in the Skillable lab manual together so you can set things up for the workshop.”  
+一旦第2步完成后，继续进行幻灯片演示。
 
-** When you get to this slide please do the following:  
+幻灯片：助理如何工作？（过渡）  
 
- 1. Share DEMO 1 on your screen (the demo has sound for the walk through). It is 2mins long.  
+"现在我们已经完成了设置，让我们快速了解一下我们的助手是如何工作的。"
 
-2. Share your screen and walk through the Skillable Lab Manual instructions. This process is demonstrated in DEMO 2. If you would prefer you can play DEMO 2 instead of walking through things yourself, however walking through the steps live is better. Completing this set up step should not take more than 8mins.   
+幻灯片：Contoso Creative Writer 是一个代理型应用程序（1分钟）
 
- 
+"Contoso Creative 是一个代理型应用程序，这意味着它能够感知其环境、做出决策并采取行动以实现目标。"
 
-Continue with slides once step 2 is complete.   
+幻灯片：代理性应用具有基于LLM的控制流程（2分钟）
 
-  
+"代理型应用也可以被描述为具有基于LLM的控制流程。这指的是，例如，一个LLM可以与用户输入互动，比如用户指示它在用户提供的论文中查找其他论文的引用。然后，LLM可以根据这个输入决定在流程中的哪个点调用哪个函数，并执行函数，将结果返回给下一个相关函数，继续这个过程，直到它能够将完整的结果返回给用户。"
 
-Slide: How does the assistant work? (Transition)  
+幻灯片：Contoso Creative：多代理创意写作助手（2分钟）
 
- " Now that we have things set up let’s dive into a brief overview of how our assistant works." 
+"Contoso Creative Writer 利用多个 Azure 服务。以下是其工作原理的快速概览：
 
-Slide: Contoso Creative Writer is an Agentic Application (1 mins) 
+用户输入：该流程从用户输入开始。
 
-"Contoso Creative is an agentic application, meaning it can perceive its environment, make decisions, and take actions to achieve goals. 
+Azure 托管标识：确保安全访问 Azure 资源。
 
- 
+Azure Monitor：监控应用程序的性能和运行状况。
 
-Slide: Agentic Applications have LLM based control flow (2 mins) 
+Azure 应用容器 (ACA)：托管我们的处理服务。
 
-"Agentic applications can also be described as having LLM based control flow. This is when for example, an LLM can interact with user input, like an instruction from a user to find references to other papers in a user provided paper. The LLM can then make decisions based on this input about which function to call at what point in the flow, and execute the function, return the result to the next relevant function and continue this until it can return the completed result to the user. " 
+Azure AI Studio：提供开发和管理AI模型的环境。
 
- 
+助手由四个主要代理组成：
 
-Slide: Contoso Creative: Multi-agent creative writing copilot (2 minutes) 
+研究员代理  
 
-"Contoso Creative Writer leverages several Azure services. Here’s a quick overview of how it works: 
+产品代理  
 
-User Input: The process begins with user input. 
+写作代理  
 
-Azure Managed Identity: Ensures secure access to Azure resources. 
-
-Azure Monitor: Monitors the performance and health of the application. 
-
-Azure Application Container (ACA): Hosts our processing services. 
-
-Azure AI Studio: Provides the environment for developing and managing AI models. 
-
-The assistant comprises 4 main agents: 
-
-Researcher Agent 
-
-Product Agent 
-
-Writer Agent 
-
-Editor Agent 
+编辑代理
 
 These agents collaborate to produce high-quality articles that market relevant products from Contoso Outdoors." 
 
- 
+幻灯片：研讨会目标（过渡）
 
-Slide: Workshop Goals (Transition) 
+幻灯片：工作坊目标（2分钟）
 
- 
+"现在，让我们讨论一下本次研讨会的目标。在本次课程结束时，您将能够：
 
-Slide: Workshop Goals (2 minutes) 
+### 实现一个真实世界的LLM生命周期
 
-"Now, let’s discuss the goals of this workshop. By the end of this session, you will be able to: 
+在开发和部署大型语言模型（LLM）的过程中，生命周期涉及多个阶段。以下是生命周期的主要步骤：
 
-Implement a real-world LLM lifecycle. 
+---
 
-Understand agents and prompt engineering with Prompty. 
+## 1. **需求分析和目标定义**
+
+在启动LLM项目之前，需要明确以下内容：
+- 用例或业务目标的定义。
+- 目标用户是谁？他们的需求是什么？
+- 期望的性能指标（例如精度、响应时间）是什么？
+- 是否有特定行业标准或法规需要满足（如数据隐私或模型偏见控制）？
+
+---
+
+## 2. **数据收集与预处理**
+
+数据是训练LLM的基础，其质量会直接影响模型性能。关键任务包括：
+- 收集多样化和高质量的文本数据，涵盖目标领域的相关语料。
+- **数据清洗**：去除噪声、不相关或有害的内容。
+- **数据标注**：对部分数据进行人工标注，可用于指导模型的微调。
+- 确保数据符合隐私规则和伦理要求。
+
+---
+
+## 3. **模型选择与训练**
+
+根据项目需求选择适合的模型架构或框架：
+- **模型选择**：选择预训练模型（如GPT、BERT）或从头开始训练。
+- **训练准备**：
+  - 配置资源环境（如GPU/TPU集群）。
+  - 设置超参数（学习率、批量大小等）。
+- **训练阶段**：
+  - 从头训练：适用于定制化需求较强的场景，但通常需要大量计算资源。
+  - 微调：采用现有预训练模型，在特定任务或领域上进行训练以提升性能。
+  - 检测过拟合和欠拟合现象，及时调整模型。
+
+---
+
+## 4. **模型评估**
+
+在此阶段，模型需要经过多方面评估：
+- **性能指标**：
+  - 例如困惑度（Perplexity）、准确性（Accuracy）、F1分数等。
+- **稳健性**：
+  - 测试模型是否对各种输入具有一致性。
+- **偏见和伦理测试**：
+  - 确保模型没有传播或加剧社会偏见。
+- 若性能不达标，则需返回训练阶段进行优化。
+
+---
+
+## 5. **部署**
+
+成功训练和评估模型后，即可进入部署阶段：
+- **基础设施部署**：
+  - 部署模型到云端、边缘设备或本地。选择合适的推理框架（如TorchServe、ONNX Runtime）。
+- **负载均衡**：
+  - 确保系统可以处理高并发的请求。
+- **优化推理**：
+  - 把模型进行量化、剪枝或蒸馏，缩减其计算和内存开销。
+
+---
+
+## 6. **监控和维护**
+
+部署后，必须对系统进行实时监控和优化：
+- **动态监控**：
+  - 性能（延迟、响应时间）。
+  - 正确性（是否生成有意义回答）。
+- **用户反馈**：
+  - 收集用户反馈进行改进。
+- **模型更新**：
+  - 周期性重新训练或微调模型以适应新需求。
+  
+---
+
+## 7. **淘汰与替换**
+
+当模型不再满足需求或无法高效运行时：
+- 评估是否需要淘汰旧模型并引入新版模型。
+- 逐步迁移以避免中断服务。
+
+---
+
+通过以上各阶段，整个LLM生命周期从项目规划到废弃管理形成了一个闭环。
+
+了解代理与提示工程：使用 Prompty。
 
 Utilize tracing for debugging and observability. 
 
-Build and run Contoso Creative. 
+构建并运行 Contoso Creative。
 
-Set up automated evaluations with GitHub Actions. 
+设置自动评估与 GitHub Actions。
 
-These goals are designed to provide you with a comprehensive understanding of building and managing a multi-agent AI application. You should all be on the WORKSHOP-README.md page and should be able to jump straight to Part 1 and continue the rest of the workshop on your own. Our team will be here to help if you get stuck and I’ll come back and share some resources when it’s time to wrap up. Have fun!" 
+这些目标旨在让您全面了解如何构建和管理一个多代理AI应用程序。您们应该都在 WORKSHOP-README.md 页面，并能够直接进入第1部分，然后继续自行完成其余的研讨会。如果您遇到困难，我们的团队将在这里提供帮助，我将在结束时回来说一些资源。祝您玩得开心！

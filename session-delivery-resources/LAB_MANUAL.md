@@ -1,66 +1,68 @@
-## Azure Credentials:
+## Azure 凭据:
 
-# CREDENTIALS
+# 凭证
 
 ````
 Username     = "@lab.CloudPortalCredential(User1).Username"
 
-Password     = "@lab.CloudPortalCredential(User1).Password"
+密码     = "@lab.CloudPortalCredential(User1).Password"
 
 AzureEnvName = "AITOUR@lab.LabInstance.Id"
 
-Subscription = "@lab.CloudSubscription.Id"
+订阅 = "@lab.CloudSubscription.Id"
 ````
 
+**如果您是从 Skillable 实验页面查看此内容的**，上方是您的专属 Azure 凭据。
 
-**If you are viewing this from the Skillable lab page** the above are your unique azure credentials.
+> **注意**：稍后在实验中将要求您复制上述内容，因此请随时准备好这些信息。
 
-> **Note**: You will be asked to copy the above block in the lab later so keep this information readily available.
-
-**If you are viewing this from Github:** The above are not your credentials. They are placeholders. Your actual credentials can be seen on the Skillable lab page.
+**如果您正在通过 Github 查看此内容：** 上述内容并不是您的凭据，它们只是占位符。您的实际凭据可以在 Skillable 实验页面上查看。
 
 ***
 
-### Welcome to the AI Tour and workshop WRK551!
+### 欢迎参加 AI 之旅和工作坊 WRK551！
 
-In this session, you will learn how to build the app, **Contoso Creative Writer**. This app will assist the marketing team at Contoso Outdoors in creating trendy, well-researched articles to promote the company’s products.
+在本节中，您将学习如何构建应用程序 **Contoso Creative Writer**。此应用程序将帮助 Contoso Outdoors 的市场营销团队创作时尚且经过充分研究的文章，用于推广公司的产品。
 
-### Pre-Requisites
+### 前置条件
 
-To participate in this workshop, you will need:
+要参加此研讨会，您需要：
 
-1. Your own laptop.
-    * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-    * A recent version of Edge, Chrome or Safari is recommended.
-2. A GitHub Account.
-    * If you don't have one, you can [signup for a free account](https://github.com/signup) now.
-    * After this workshop is complete, you will have a fork of the "contoso-creative-writer" repository in your GitHub account, which includes all the materials you will need to reproduce this workshop at home.
-3. Familiarity with Visual Studio Code.
-    * We will run all code in GitHub Codespaces, a virtualized Linux machine, instead of your local laptop. We won't be running anything on your laptop directly.
-    * VS Code Online will be our development environment in GitHub Codespaces.
-    * If you are familiar with running Codespaces within VS Code Desktop on your laptop, feel free to do so.
-4. (preferred) Familiarity with the *bash* shell.
-    * We'll be using *bash* to run commands in the VS Code terminal.
+1. 您自己的笔记本电脑。
+    * 它只需能够运行浏览器和 GitHub Codespaces，所以几乎任何笔记本电脑都可以使用。
+    * 推荐使用最新版本的 Edge、Chrome 或 Safari 浏览器。
 
-### To begin this lab follow these steps:
+2. 一个 GitHub 账户。
+    * 如果您还没有账户，可以[注册一个免费账户](https://github.com/signup)。
+    * 在这次研讨会结束后，您的 GitHub 账户中将会有 "contoso-creative-writer" 仓库的一个分支副本，其中包括您在家中复现此次研讨会所需的所有材料。
 
-1. Confirm that you can see your **Azure Credentials** at the top of the page. 
-    * You will use these to login to Azure Developer CLI (AZD) and Azure CLI (AZ) later. 
+3. 熟悉 Visual Studio Code。
+    * 我们将在 GitHub Codespaces（一台虚拟化的 Linux 机器）中运行所有代码，而不是直接在您的本地笔记本电脑上运行。
+    * VS Code Online 将是我们在 GitHub Codespaces 中使用的开发环境。
+    * 如果您熟悉在笔记本电脑上使用 VS Code Desktop 运行 Codespaces，您也可以选择这么做。
 
-2.  Click on this link [https://aka.ms/aitour/wrk551](https://aka.ms/aitour/wrk551). This will take you to the project Github repository.
-    * If you are not logged into Github already you will need to login using **your own** GitHub account credentials. 
+4. （优选）熟悉 *bash* shell。
+    * 我们将在 VS Code 的终端中使用 *bash* 来运行命令。
 
-3. Click the green **<> Code** button in the top-right part of the page.
-    * Click the Codespaces tab
-    * Then click **Create codespace on main**
-    * This will open a pre-built Codespace on main. 
+### 开始此实验，请按照以下步骤操作：
 
-    > **🚧 IMPORTANT**: Do not open the GitHub Codespace on a fork of the repository, this would prevent you from using the prebuilt Codespace container image. Don't worry, you'll have the possibility to fork the repository later.
+1. 确认您可以在页面顶部看到您的 **Azure 凭据**。  
+    * 您稍后将使用这些凭据登录 Azure Developer CLI (AZD) 和 Azure CLI (AZ)。  
 
-4. Once your Codespace is ready:
-    * In the file explorer look for the **docs** folder and in it open the **workshop** folder. 
-    * Open the **WORKSHOP-README.md** file. (There are other Readme files in the folder,specifically open the workshop one.)
-    * Follow the instructions to get going!
-    * When following the steps to login to AZD and AZ in Part 1 of this file, use the [azure credentials](#azure-credentials) at the top of the Skillable manual to login.
+2. 点击此链接 [https://aka.ms/aitour/wrk551](https://aka.ms/aitour/wrk551)。这将带您前往项目的Github存储库。  
+   * 如果您尚未登录Github，您需要使用**您自己的**GitHub账户凭证登录。
+
+3. 点击页面右上角的绿色 **<> Code** 按钮。  
+    * 点击 Codespaces 标签  
+    * 然后点击 **Create codespace on main**  
+    * 这将会在 main 分支上打开一个预构建的 Codespace。  
+
+    > **🚧 重要**：不要在仓库的分叉版本中打开 GitHub Codespace，这会阻止您使用预构建的 Codespace 容器镜像。别担心，您稍后会有机会分叉该仓库。
+
+4. 一旦你的 Codespace 准备好后：
+   * 在文件资源管理器中找到 **docs** 文件夹，并打开其中的 **workshop** 文件夹。
+   * 打开 **WORKSHOP-README.md** 文件。（该文件夹中还有其他的 Readme 文件，请特别打开 workshop 的那个文件。）
+   * 按照说明开始操作！
+   * 在按照此文件第 1 部分中的步骤登录 AZD 和 AZ 时，使用 Skillable 手册顶部的 [azure credentials](#azure-credentials) 进行登录。
 
 Have fun building!🎉
